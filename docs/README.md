@@ -15,11 +15,11 @@ For environment setup, dataset preparation, and general usage instructions, plea
 
 ## 🎯 Weight Files
 
-- **Weights (Trained on COCO dataset):**  
+- **Weights files (trained on COCO dataset):**  
   The folder `Weights files (trained on COCO dataset)` includes YOLO_AquaLite model variants (`nano`, `small`, `medium`, `large`, and `xlarge`) trained on the COCO dataset.
 
 
-- **Weights (Fine-tuned on Fish dataset):**  
+- **Weights files (Fine-tuned on Fish dataset):**  
   The folder `Weights files (Fine_tuned on Fish dataset)` contains YOLO_AquaLite model variants that have been fine-tuned on the fish dataset described in our paper.
 
 
