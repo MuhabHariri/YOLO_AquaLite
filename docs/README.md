@@ -16,7 +16,10 @@ For environment setup, dataset preparation, and general usage instructions, plea
 ## 🎯 Weight Files
 
 - **Weights files (trained on COCO dataset):**  
-  The folder `Weights files (trained on COCO dataset)` includes YOLO_AquaLite model variants (`nano`, `small`, `medium`, `large`, and `xlarge`) trained on the COCO dataset.
+  The folder `Weights files (trained on COCO dataset)` includes YOLO_AquaLite model variants ([nano](https://github.com/MuhabHariri/YOLO_AquaLite/raw/main/Weights%20files%20(trained%20on%20COCO%20dataset)/YOLO_AquaLite_n.pt), [small](https://github.com/MuhabHariri/YOLO_AquaLite/raw/main/Weights%20files%20(trained%20on%20COCO%20dataset)/YOLO_AquaLite_s.pt), [medium](https://github.com/MuhabHariri/YOLO_AquaLite/raw/main/Weights%20files%20(trained%20on%20COCO%20dataset)/YOLO_AquaLite_m.pt), [large](https://github.com/MuhabHariri/YOLO_AquaLite/raw/main/Weights%20files%20(trained%20on%20COCO%20dataset)/YOLO_AquaLite_l.pt), and [xlarge](https://github.com/MuhabHariri/YOLO_AquaLite/raw/main/Weights%20files%20(trained%20on%20COCO%20dataset)/YOLO_AquaLite_xl.pt)) trained on the COCO dataset.
+
+
+
 
 
 - **Weights files (Fine-tuned on Fish dataset):**  
