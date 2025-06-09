@@ -2,15 +2,45 @@
 
 ---
 
-
 ## 🛠 Setup, Configuration, and Training
 
-<br>
-<a href="https://www.ultralytics.com/" target="_blank"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+<p align="center">
+  <a href="https://www.ultralytics.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo">
+  </a>
+</p>
 
 This project is built on top of the Ultralytics YOLO framework, specifically **YOLOv11**.  
 For environment setup, dataset preparation, and general usage instructions, please refer to the official [Ultralytics YOLO Documentation](https://docs.ultralytics.com/).
 
+### 🔧 Installing YOLO-AquaLite
+
+> **Prerequisite:** Python must already be installed on your system.
+
+Follow these steps to install YOLO-AquaLite in a clean virtual environment:
+
+```bash
+# 1. Create a virtual environment
+python3 -m venv venv_aqualite
+
+# 2. Activate the environment
+source venv_aqualite/bin/activate
+
+# 3. Change directory to the virtual environment: 
+cd venv_aqualite/  
+
+# 4. Install Ultralytics (tested with version 8.3.72)
+python3 -m pip install ultralytics==8.3.72
+
+# 5. Clone the YOLO-AquaLite repository
+git clone https://github.com/MuhabHariri/YOLO_AquaLite.git
+
+# 6. Change directory into the project folder
+cd YOLO_AquaLite/
+
+# 7. Install YOLO-AquaLite in editable mode
+pip install -e .
+```
 ---
 ## 📌 What is YOLO_AquaLite?
 <br>
@@ -51,5 +81,4 @@ To train a YOLO_AquaLite model variant, use the following command:
 yolo detect train data=Dataset.yaml model=ultralytics/cfg/models/11/YOLO_AquaLite_Variant.yaml epochs=500 batch=32 imgsz=640
 ```
 Replace `Variant` with the desired model size: `n` (nano), `s` (small), `m` (medium), `l` (large), or `xl` (xlarge).
-
 
