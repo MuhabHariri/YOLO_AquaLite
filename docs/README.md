@@ -82,3 +82,21 @@ yolo detect train data=Dataset.yaml model=ultralytics/cfg/models/11/YOLO_AquaLit
 ```
 Replace `Variant` with the desired model size: `n` (nano), `s` (small), `m` (medium), `l` (large), or `xl` (xlarge).
 
+---
+
+### ⚙️ Training Configuration
+
+To display the training configuration (including data augmentation), run:
+```bash
+yolo cfg
+```
+---
+
+### ⏱️ Latency Benchmark
+
+To measure latency, set **`model_name`** (path to your engine) and **`source_folder`** (path to your images) in latency_benchmark.py, then run:
+```bash
+python latency_benchmark.py
+```
+---
+
