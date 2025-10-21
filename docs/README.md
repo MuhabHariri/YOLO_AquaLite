@@ -86,7 +86,7 @@ Replace `Variant` with the desired model size: `n` (nano), `s` (small), `m` (med
 
 ### ⚙️ Training Configuration
 
-To display the training configuration (including data augmentation), run:
+To display the training configuration (including data augmentation), run the following command:
 ```bash
 yolo cfg
 ```
@@ -94,7 +94,7 @@ yolo cfg
 
 ### ⏱️ Latency Benchmark
 
-To measure latency, set **`model_name`** (path to your engine) and **`source_folder`** (path to your images) in latency_benchmark.py, then run:
+To measure latency, set **`model_name`** (path to your engine) and **`source_folder`** (path to your images) in latency_benchmark.py, then run the following command:
 ```bash
 python latency_benchmark.py
 ```
