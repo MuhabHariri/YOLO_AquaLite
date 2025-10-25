@@ -86,10 +86,33 @@ Replace `Variant` with the desired model size: `n` (nano), `s` (small), `m` (med
 
 ### ⚙️ Training Configuration
 
+The following table shows the main training configuration:
+
+| Hyperparameter    | Value  |
+|-------------------|--------|
+| `batch`           | 64     |
+| `optimizer`       | SGD    |
+| `lr0`             | 0.01   |
+| `lrf`             | 0.01   |
+| `warmup_epochs`   | 3.0    |
+| `weight_decay`    | 0.0005 |
+| `warmup_momentum` | 0.8    |
+
+**Hyperparameter definitions** *(taken from the [Ultralytics documentation](https://docs.ultralytics.com/guides/hyperparameter-tuning/#default-search-space-description))*
+
+- **`batch`** — Number of images processed simultaneously in a forward pass.
+- **`optimizer (SGD)`** — The optimizer used for training.
+- **`lr0 (initial learning rate)`** — Initial learning rate at the start of training. Lower values provide more stable training but slower convergence.  
+- **`lrf (final LR fraction)`** — Final learning rate factor as a fraction of lr0. Controls how much the learning rate decreases during training.  
+- **`warmup_epochs`** — Number of epochs for linear learning rate warmup. Helps prevent early training instability.  
+- **`weight_decay`** — L2 regularization factor to prevent overfitting. Larger values enforce stronger regularization.  
+- **`warmup_momentum`** — Initial momentum during warmup phase. Gradually increases to the final momentum value.
+
 To display the training configuration (including data augmentation), run the following command:
 ```bash
 yolo cfg
 ```
+
 ---
 
 ### ⏱️ Latency Benchmark
