@@ -101,7 +101,7 @@ The following table shows the main training configuration:
 **Hyperparameter definitions** *(taken from the [Ultralytics documentation](https://docs.ultralytics.com/guides/hyperparameter-tuning/#default-search-space-description))*
 
 - **`batch`** — Number of images processed simultaneously in a forward pass.
-- **`optimizer (SGD)`** — The optimizer used for training.
+- **`optimizer`** — The optimizer used for training.
 - **`lr0 (initial learning rate)`** — Initial learning rate at the start of training. Lower values provide more stable training but slower convergence.  
 - **`lrf (final LR fraction)`** — Final learning rate factor as a fraction of lr0. Controls how much the learning rate decreases during training.  
 - **`warmup_epochs`** — Number of epochs for linear learning rate warmup. Helps prevent early training instability.  
