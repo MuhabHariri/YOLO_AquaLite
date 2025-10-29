@@ -7,6 +7,14 @@
 import time, cv2, numpy as np, torch
 from ultralytics import YOLO
 from pathlib import Path
+import random
+import numpy as np
+
+SEED = 123
+random.seed(SEED)
+np.random.seed(SEED)
+torch.manual_seed(SEED)
+torch.cuda.manual_seed_all(SEED)
 
 models_folder = "."
 model_name = "best.engine"
@@ -50,5 +58,6 @@ if e2e_ms:
     print(f"E2E avg: {np.mean(e2e_ms):.2f} ms @ imgsz={imgsz}, batch=1, save=False over {n} images")
 else:
     print("No successful inferences.")
+
 
 
