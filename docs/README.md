@@ -82,6 +82,8 @@ yolo detect train data=Dataset.yaml model=ultralytics/cfg/models/11/YOLO_AquaLit
 ```
 Replace `Variant` with the desired model size: `n` (nano), `s` (small), `m` (medium), `l` (large), or `xl` (xlarge).
 
+Fine-tuning script is available as `YOLO_AquaLite_fine_tuning_script.py`.
+
 ---
 
 ### ⚙️ Training Configuration
