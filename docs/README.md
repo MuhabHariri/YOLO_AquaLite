@@ -114,6 +114,12 @@ To display the training configuration (including data augmentation), run the fol
 ```bash
 yolo cfg
 ```
+---
+## 🧠 Inference 
+To run predictions with a trained YOLO_AquaLite model, use the following command:
+```bash
+yolo predict model=runs/detect/train/weights/best.pt source=path/to/your/images_or_videos imgsz=640
+```
 
 ---
 
